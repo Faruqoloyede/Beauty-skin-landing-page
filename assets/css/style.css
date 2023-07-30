@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,200;1,300;1,600&display=swap');
 :root {
     --white-color: #FBFBFA;
     --red-color: #EA1953;
@@ -27,10 +27,33 @@ i {
     border-radius: 50%;
     padding: 10px;
     margin-left: 15px;
+    cursor: pointer;
+}
+
+.btn {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    color: var(--text-color);
 }
 
 .flex {
     display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
     align-items: center;
 }
 
@@ -42,8 +65,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 section {
-    padding: 40px 0;
+    padding: 25px 0;
 }
 
 .container {
@@ -66,6 +94,10 @@ header {
     z-index: 1000;
 }
 
+.header_scroll {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
 /*=====NAV=====*/
 .nav {
     display: flex;
@@ -86,9 +118,26 @@ header {
 }
 
 .nav_link {
-    padding: 1.5rem;
+    padding: 10px 20px;
     color: var(--black-color);
     font-weight: bold;
+    cursor: pointer;
+}
+
+.nav_link:hover {
+    background-color:var(--red-color);
+    border-radius: 15px;
+    color: var(--white-color);
+}
+
+.nav_link.active {
+    background-color:var(--red-color);
+    border-radius: 15px;
+    color: var(--white-color);
+}
+
+.side_menu .hamburger {
+    display: none;
 }
 
 .serach_bar {
@@ -113,12 +162,12 @@ header {
 
 /*=====HERO=====*/
 .hero .hero_img {
-    height: 800px;
+    height: 100%;
     width: 100%;
 }
 
 .hero_details {
-    padding-top: 15rem;
+    padding-top: 12rem;
 }
 
 .hero_details h4 {
@@ -128,7 +177,6 @@ header {
 }
 
 .hero_details h1 {
-    font-size: 3rem;
     margin-top: 1rem;
     line-height: 1;
     color: var(--white-color);
@@ -145,22 +193,115 @@ header {
 
 .button {
     gap: 1rem;
+    
 }
 
-.btn {
-    border: 0;
-    padding: 10px 12px;
-    border-radius: 15px;
-}
 
-.btn_primary {
-    background-color: var(--red-color);
-    color: var(--white-color);
-    font-weight: bold;
+.btn_primary:hover {
+    background-color: var(--white-color);
+    color: var(--red-color);
 }
 
 .btn_secondary {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
     background-color: var(--white-color);
     color: var(--red-color);
-    font-weight: bold;
+}
+
+.btn_secondary:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+/*=====ABOUT=====*/
+
+.about_details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.about_content h1 {
+    line-height: 1.2;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.about_content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+
+/*=====SERVICE=====*/
+.service_inner {
+    text-align: center;
+}
+
+.service_inner h1 {
+    margin-bottom: 1rem;
+}
+
+.service_content {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+}
+
+.service_card {
+    text-align: center;
+}
+
+.service_card img {
+    width: 200px;
+    border-radius: 50%;
+    padding: 20px;
+    border: 1px solid var(--red-color);
+}
+
+
+.service_card h5 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service_btn {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/*=====TESTIMONIAL=====*/
+.testimonial {
+    background: url('/assets/img/tes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonial_details {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.testimonial_details p {
+    margin-top: 1rem;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.testimonial_details img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+}
+
+.testimonial_details h4 {
+    color: var(--red-color);
+}
+
+.testimonial_details span {
+    color: var(--white-color);
 }

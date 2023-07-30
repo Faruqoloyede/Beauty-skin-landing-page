@@ -19,25 +19,25 @@
             <div class="menu_nav">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#" class="nav_link acive">HOME</a>
+                        <a href="#" class="nav_link active">HOME</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link acive">ABOUT</a>
+                        <a href="#about" class="nav_link acive">ABOUT</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link acive">SERVICE</a>
+                        <a href="#service" class="nav_link acive">SERVICE</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link acive">TESTIONIAL</a>
+                        <a href="#testimonial" class="nav_link acive">TESTIONIAL</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link acive">CONTACT US</a>
+                        <a href="#contact" class="nav_link acive">CONTACT US</a>
                     </li>
                 </ul>
             </div>
 
             <div class="side_menu flex">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars hamburger"></i>
                 <i class="fa-solid fa-user"></i>
                 <div class="serach_bar">
                     <input type="search" class="search" placeholder="search...">
@@ -47,51 +47,123 @@
         </nav>
     </header>
     <!--=====hero section=====-->
-    <section class="hero">
-        <div class="swiper mySwiper">
+    <section class="hero" id="hero">
+        <div class="swiper slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide hero_img" style="background-image: url(assets/img/hero.jpg);">
-                    <div class="hero_details container">
-                        <h4>MAKE ARTISIT</h4>
-                        <h1>Your <span>Passion</span> and<br>
-                            Develop Your <span>Skills</span></h1>
-                            <p>Artists are individuals who express themselves creatively<br>through a wide range of mediums including painting.</p>
-                            <div class="button flex">
-                                <button type="button" class="btn_primary btn">Learn more</button>
+              <div class="swiper-slide hero_img" style="background: url(assets/img/hero.jpg);">
+                <div class="hero_details container">
+                    <h4>MAKE ARTISIT</h4>
+                    <h1>Your <span>Passion</span> and<br>
+                        Develop Your <span>Skills</span></h1>
+                        <p>Artists are individuals who express themselves creatively<br>through a wide range of mediums including painting.</p>
+                        <div class="button flex">
+                                <button type="button" class="btn">Learn more</button>
                                 <button type="button" class="btn_secondary btn">Book now</button>
                             </div>
-                    </div>
                 </div>
-              <!-- <div class="swiper-slide">
-                <div class="swiper-slide hero_img" style="background-image: url(assets/img/hero.jpg);">
-                    <div class="hero_details">
-                        <h4>MAKE ARTISIT</h4>
-                        <h1>Your <span>Passion</span> and<br>
-                            Develop Your <span>Skills</span></h1>
-                            <p>Artists are individuals who express themselves creatively<br>through a wide range of mediums including painting.</p>
-                            <div class="button">
-                                <button type="button">Learn more</button>
-                                <button type="button">Book now</button>
-                            </div>
-                    </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide hero_img" style="background-image: url(assets/img/hero.jpg);">
-                    <div class="hero_details">
-                        <h4>MAKE ARTISIT</h4>
-                        <h1>Your <span>Passion</span> and<br>
-                            Develop Your <span>Skills</span></h1>
-                            <p>Artists are individuals who express themselves creatively<br>through a wide range of mediums including painting.</p>
-                            <div class="button">
-                                <button type="button">Learn more</button>
-                                <button type="button">Book now</button>
-                            </div>
-                    </div>
-              </div> -->
             </div>
-            <div class="swiper-pagination"></div>
+              <div class="swiper-slide hero_img" style="background: url(assets/img/hero2.jpg);">
+                <div class="hero_details container">
+                    <h4>MAKE ARTISIT</h4>
+                    <h1>Your <span>Passion</span> and<br>
+                        Develop Your <span>Skills</span></h1>
+                        <p>Artists are individuals who express themselves creatively<br>through a wide range of mediums including painting.</p>
+                        <div class="button flex">
+                                <button type="button" class="btn">Learn more</button>
+                                <button type="button" class="btn_secondary btn">Book now</button>
+                            </div>
+                </div>
+              </div>
+              <div class="swiper-slide hero_img" style="background: url(assets/img/hero3.jpg);">
+                <div class="hero_details container">
+                    <h4>MAKE ARTISIT</h4>
+                    <h1>Your <span>Passion</span> and<br>
+                        Develop Your <span>Skills</span></h1>
+                        <p>Artists are individuals who express themselves creatively<br>through a wide range of mediums including painting.</p>
+                        <div class="button flex">
+                                <button type="button" class="btn">Learn more</button>
+                                <button type="button" class="btn_secondary btn">Book now</button>
+                            </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination dot"></div>
+          </div>
+    </section>
+
+    <!--=====ABOUT SECTION====-->
+    <section class="about" id="about">
+        <div class="about_details container grid">
+            <img src="assets/img/about.png">
+            <div class="about_content">
+                <h1>ARTISTS <span>CREATIVITY</span><br> SHAPING THE<br> <span>WORLD</span> AROUND US</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facilis architecto quas dolores quidem corporis quo qui minus dolorum nam?</P>
+                <button type="button" class="abt_btn btn">BOOK NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!--=====SERVICE SECTION====-->
+    <section class="service" id="service">
+        <div class="service_details container">
+            <div class="service_inner">
+                <h1>OUR PROFESSIONAL SERVICES</h1>
+                <P>Our artist services are designed to help artists of all levels<br>unlock their creative potential and take their craft to</P>
+            </div>
+
+            <div class="service_content grid">
+                <div class="service_card">
+                    <img src="assets/img/s1.png">
+                    <h5>MAKEUP HAIRSTYLE</h5>
+                </div>
+
+                <div class="service_card">
+                    <img src="assets/img/s2.png">
+                    <h5>MAKEUP SHHOTING</h5>
+                    <P>A makeup artist is a professional<br>who specializes in the  of  fashion</P>
+                </div>
+                <div class="service_card">
+                    <img src="assets/img/s3.png">
+                    <h5>EVENT MAKEUP</h5>
+                </div>
+            </div>
+                <div class="service_btn">
+                    <button class="serv_btn btn">LEARN MORE</button>
+                </div>
+            </div>
+    </section>
+
+    <!--=====TESTIMONIAL====-->
+    <section class="testimonial" id="testimonial">
+        <div class="swiper slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonial_details">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Dear Nestin, wewould like to commend you for your effort in completing the work done on the obindia.org and<br>the cbnindia.org websites. You extended yourself and went beyond the scope of the project and more than f<br>there is future work, you would be our first consideration. Thank you for all your effort.</p>
+                <img src="assets/img/t1.png">
+                <h4>Rina Singh</h4>
+                <span>Operation Blessing, India</span>
+            </div>
+                <div class="swiper-slide testimonial_details">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Dear Nestin, wewould like to commend you for your effort in completing the work done on the obindia.org and<br>the cbnindia.org websites. You extended yourself and went beyond the scope of the project and more than f<br>there is future work, you would be our first consideration. Thank you for all your effort.</p>
+                    <img src="assets/img/t1.png">
+                    <h4>Rina Singh</h4>
+                    <span>Operation Blessing, India</span>
+              </div>
+              <div class="swiper-slide testimonial_details">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Dear Nestin, wewould like to commend you for your effort in completing the work done on the obindia.org and<br>the cbnindia.org websites. You extended yourself and went beyond the scope of the project and more than f<br>there is future work, you would be our first consideration. Thank you for all your effort.</p>
+                <img src="assets/img/t1.png">
+                <h4>Rina Singh</h4>
+                <span>Operation Blessing, India</span>
+              </div>
+            </div>
+            <div class="swiper-pagination dot"></div>
+          </div>
     </section>
    
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/JS/APP.JS"></script>
 </body>
 </html>
