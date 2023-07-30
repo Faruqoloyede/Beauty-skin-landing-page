@@ -1,0 +1,4 @@
+white-color: #FBFBFA;
+pink-color: #EA1953;
+black-color: #222222;
+text-color: #B2B2B2;

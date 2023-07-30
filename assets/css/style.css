@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+:root {
+    --white-color: #FBFBFA;
+    --red-color: #EA1953;
+    --black-color: #222222;
+    --text-color: #B2B2B2;
+}
+
+/*====utilities=====*/
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+i {
+    color: var(--white-color);
+    background-color: var(--red-color);
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.container {
+    padding: 2rem 5rem;
+    margin: 0 auto;
+}
+
+span {
+    color: var(--red-color);
+}
+
+/*====HEADER=====*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: var(--white-color);
+    z-index: 1000;
+}
+
+/*=====NAV=====*/
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    transition: all .3s;
+}
+
+.logo img{
+    width: 4rem;
+    height: auto;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+}
+
+.nav_link {
+    padding: 1.5rem;
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+.serach_bar {
+    position: relative;
+}
+.serach_bar .search{
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 0;
+    margin-left: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.178);
+}
+
+.search_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*=====HERO=====*/
+.hero .hero_img {
+    height: 800px;
+    width: 100%;
+}
+
+.hero_details {
+    padding-top: 15rem;
+}
+
+.hero_details h4 {
+    font-size: 2rem;
+    color: var(--red-color);
+    font-style: italic;
+}
+
+.hero_details h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    line-height: 1;
+    color: var(--white-color);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.hero_details p {
+    color: var(--white-color);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    gap: 1rem;
+}
+
+.btn {
+    border: 0;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+
+.btn_primary {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.btn_secondary {
+    background-color: var(--white-color);
+    color: var(--red-color);
+    font-weight: bold;
+}
