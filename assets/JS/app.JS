@@ -40,7 +40,7 @@ window.addEventListener("scroll", scrollView);
 
 var swiper = new Swiper(".slider", {
     autoplay: {
-        delay: 2000,
+        delay: 2500,
         disableOnInteraction: false,
     },
     
